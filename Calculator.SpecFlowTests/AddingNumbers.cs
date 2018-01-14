@@ -6,10 +6,10 @@ namespace Calculator.SpecFlowTests
     [Binding]
     public class AddingNumbers
     {
-        static private ICalculator calculator;
+        private static ICalculator calculator;
 
         [BeforeScenario]
-        static public void BeforeFeature()
+        public static void BeforeFeature()
         {
             calculator = new Calculator();
         }
